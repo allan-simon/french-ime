@@ -1,3 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">FrenchIme</string>
+    <!-- Application name shown in app drawer -->
+    <string name="app_name">French Keyboard</string>
+    
+    <!-- Name shown in system IME picker -->
+    <string name="french_ime_name">French Keyboard</string>
+    
+    <!-- Settings activity title -->
+    <string name="settings_name">French Keyboard Settings</string>
+    
+    <!-- Settings screen strings -->
+    <string name="settings_vibration">Vibration feedback</string>
+    <string name="settings_vibration_summary">Vibrate on key press</string>
+    <string name="settings_sound">Sound feedback</string>
+    <string name="settings_sound_summary">Play sound on key press</string>
+    <string name="settings_auto_caps">Auto-capitalization</string>
+    <string name="settings_auto_caps_summary">Capitalize first letter of sentences</string>
+    
+    <!-- French specific settings -->
+    <string name="settings_accents">Quick accent input</string>
+    <string name="settings_accents_summary">Long press for accented characters (é, è, ê, etc.)</string>
+    <string name="settings_suggestions">French suggestions</string>
+    <string name="settings_suggestions_summary">Show French word suggestions while typing</string>
+    
+    <!-- Error messages -->
+    <string name="error_ime_not_enabled">Please enable French Keyboard in system settings</string>
+    <string name="error_dict_download">Failed to download French dictionary</string>
 </resources>

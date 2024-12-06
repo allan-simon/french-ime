@@ -1,19 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- This manifest requires several additional files and resources as detailed in comments -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Application configuration -->
+    <!-- Note: app_name string resource required in res/values/strings.xml -->
+    <!-- Note: Material3 dependency required in build.gradle -->
     <application
         android:allowBackup="true"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Material3.DayNight">  <!-- Using Material3 theme -->
+        android:theme="@style/Theme.Material3.DayNight">
 
+        <!-- Main IME Service - You need to create FrenchIMEService.java/kt extending InputMethodService -->
+        <!-- Note: french_ime_name string resource required in res/values/strings.xml -->
+        <service
+            android:name=".FrenchIMEService"
+            android:label="@string/french_ime_name"
+            android:permission="android.permission.BIND_INPUT_METHOD"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+            <!-- Note: method.xml configuration file required in res/xml/ -->
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/method" />
+        </service>
+
+        <!-- Settings Activity - You need to create IMESettingsActivity.java/kt -->
+        <!-- Note: settings_name string resource required in res/values/strings.xml -->
         <activity
-            android:name=".MainActivity"
+            android:name=".IMESettingsActivity"
+            android:label="@string/settings_name"
             android:exported="true"
-            android:windowSoftInputMode="adjustResize">  <!-- Better handling of screen space -->
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
+
+    <!-- Permission for optional haptic feedback -->
+    <uses-permission android:name="android.permission.VIBRATE" />
 </manifest>
+

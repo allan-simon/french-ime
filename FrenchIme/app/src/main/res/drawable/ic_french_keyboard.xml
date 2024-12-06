@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Background keyboard shape -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M4,4L20,4A2,2 0,0 1,22 6L22,18A2,2 0,0 1,20 20L4,20A2,2 0,0 1,2 18L2,6A2,2 0,0 1,4 4z" />
+
+    <!-- Top row keys -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.9"
+        android:pathData="M5,6L7,6A1,1 0,0 1,8 7L8,9A1,1 0,0 1,7 10L5,10A1,1 0,0 1,4 9L4,7A1,1 0,0 1,5 6z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.9"
+        android:pathData="M9,6L11,6A1,1 0,0 1,12 7L12,9A1,1 0,0 1,11 10L9,10A1,1 0,0 1,8 9L8,7A1,1 0,0 1,9 6z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.9"
+        android:pathData="M13,6L15,6A1,1 0,0 1,16 7L16,9A1,1 0,0 1,15 10L13,10A1,1 0,0 1,12 9L12,7A1,1 0,0 1,13 6z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.9"
+        android:pathData="M17,6L19,6A1,1 0,0 1,20 7L20,9A1,1 0,0 1,19 10L17,10A1,1 0,0 1,16 9L16,7A1,1 0,0 1,17 6z" />
+
+    <!-- Middle row keys -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.9"
+        android:pathData="M5,11L7,11A1,1 0,0 1,8 12L8,14A1,1 0,0 1,7 15L5,15A1,1 0,0 1,4 14L4,12A1,1 0,0 1,5 11z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.9"
+        android:pathData="M9,11L11,11A1,1 0,0 1,12 12L12,14A1,1 0,0 1,11 15L9,15A1,1 0,0 1,8 14L8,12A1,1 0,0 1,9 11z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.9"
+        android:pathData="M13,11L15,11A1,1 0,0 1,16 12L16,14A1,1 0,0 1,15 15L13,15A1,1 0,0 1,12 14L12,12A1,1 0,0 1,13 11z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.9"
+        android:pathData="M17,11L19,11A1,1 0,0 1,20 12L20,14A1,1 0,0 1,19 15L17,15A1,1 0,0 1,16 14L16,12A1,1 0,0 1,17 11z" />
+
+    <!-- Space bar -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.9"
+        android:pathData="M5,16L19,16A1,1 0,0 1,20 17L20,18A1,1 0,0 1,19 19L5,19A1,1 0,0 1,4 18L4,17A1,1 0,0 1,5 16z" />
+
+    <!-- French flag colors -->
+    <path
+        android:fillColor="#002395"
+        android:pathData="M5,6L6,6L6,9L5,9z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M6,6L7,6L7,9L6,9z" />
+    <path
+        android:fillColor="#ED2939"
+        android:pathData="M7,6L8,6L8,9L7,9z" />
+
+    <!-- É character -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M13.5,7.2L14.3,7.2L14.3,7.7L13.5,7.7L13.5,8.2L14.2,8.2L14.2,8.7L13,8.7L13,6.7L14.2,6.7L14.2,7.2L13.5,7.2z
+                        M13.8,6.2L14.1,6.2L14.3,5.7L13.9,5.7z" />
+</vector>
