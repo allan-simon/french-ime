@@ -1,0 +1,2 @@
+rootProject.name = "FrenchIme"
+include ':app'

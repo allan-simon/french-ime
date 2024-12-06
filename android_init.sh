@@ -107,7 +107,7 @@ cat << EOF > app/src/main/AndroidManifest.xml
 EOF
 
 # Create MainActivity.kt
-cat << EOF > app/src/main/java/com/example/myandroidapp/MainActivity.kt
+cat << EOF > $PACKAGE_PATH/MainActivity.kt
 package $PACKAGE_NAME
 
 import androidx.appcompat.app.AppCompatActivity
@@ -161,4 +161,3 @@ echo "To build the project:"
 echo "  ./gradlew assembleDebug"
 echo "To install on a connected device:"
 echo "  ./gradlew installDebug"
-EOF
